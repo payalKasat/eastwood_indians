@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="eng">
+    <title>Eastwood Indians</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script_ei.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Eastwood Indians Village </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="events.html" target="_blank">Events</a></li>
+                <li><a href="photos.html" target="_blank">Photo Gallery</a></li>
+                <li><a href="registration.html" target="_blank">Registration</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid bg-3 text-center event_div">
+    <h3>Yearly festivals and functions</h3>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Sankranti</p>
+            <a><img class="event_pic" src="images/sankranti.jpg" alt="Image" data-section="sankranti"></a>
+        </div>
+        <div class="col-sm-4">
+            <p>Holi</p>
+            <a><img class="event_pic" src="images/holi.jpg" alt="Image" data-section="holi"></a>
+        </div>
+        <div class="col-sm-4">
+            <p>Summer Picnic</p>
+            <a><img class="event_pic" src="images/summer-picnic.jpg" alt="Image" data-section="picnic"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Halloween</p>
+            <a><img class="event_pic" src="images/Halloween.jpeg" alt="Image" data-section="halloween"></a>
+        </div>
+        <div class="col-sm-4">
+            <p>Diwali</p>
+            <a><img class="event_pic" src="images/diwali.jpg" alt="Image" data-section="diwali"></a>
+        </div>
+        <div class="col-sm-4">
+            <p>X-mas/New Year</p>
+            <a><img class="event_pic" src="images/Christmas-New-Year.jpg" alt="Image" data-section="new_year"></a>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active one"></div>
+                        <div class="item two"></div>
+                        <div class="item three"></div>
+                        <div class="item four"></div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="container-fluid bg-2 text-center">
+    <p>Eastwood Indians community</p>
+</footer>
+</body>
+</html>

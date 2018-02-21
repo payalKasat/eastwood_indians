@@ -1,0 +1,120 @@
+body {
+    font: 2em Montserrat, sans-serif;
+    line-height: 1.8;
+    #color: #f5f6f7;
+}
+p {font-size: 1em;}
+.bg-1{
+    background-color: white; /* white */
+}
+.bg-2 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+}
+.container-fluid {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.navbar {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    background-color: #2f2f2f;
+    color: white;
+}
+.navbar-default .navbar-brand {
+    color: #1abc9c;
+}
+.navbar-nav li a{
+    color: white !important;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.right_side{
+    #border: 1px solid black;
+}
+.left_side{
+    height: 90vh;
+    background-color: #1abc9c;
+}
+.main_title{
+    padding: 15%;
+}
+.main_image{
+    height: 100%;
+    width: 100%;
+}
+.commu{
+    height: 10vh;
+    border: 1px solid;
+    padding: 2%;
+    margin: 1%;
+}
+.commu a{
+    color: #1abc9c !important;
+}
+.commu a:hover{
+    color: #2f2f2f !important;
+}
+.hover_effect{
+    background-color: #2f2f2f;
+    box-shadow: 5px 5px 5px #1abc9c;
+}
+.carousel-caption>h3{
+    position: fixed;
+    right: 40%;
+    bottom: 80%;
+    color: black;
+    text-shadow: 3px 3px 3px #1abc9c;
+}
+.carousel-indicators{
+    position: relative;
+}
+.carousel-indicators>li{
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+}
+.carousel{
+    height: 60vh;
+}
+.para{
+    height: 20vh;
+    color: #1abc9c;
+    font-size: .8em;
+}
+.panel-default>.panel-heading{
+    background-color: #1abc9c;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    border: 3px solid black;
+}
+.carousel-control{
+    color: #1abc9c;
+}
+.panel-body>p{
+    color: #2f2f2f;
+    font-size: .8em;
+}
+.panel-body>ol>li{
+    font-size: 0.8em;
+}
+.event_pic,.model_event_pic{
+    height: 30vh;
+    width: 100%;
+}
+.event_pic:hover{
+    border: 10px solid black;
+    box-shadow: 3px 3px white;
+    opacity: 0.6;
+}

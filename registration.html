@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="eng">
+    <title>Eastwood Indians Registration page</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script_ei.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Eastwood Indians Village </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="events.html" target="_blank">Events</a></li>
+                <li><a href="photos.html" target="_blank">Photo Gallery</a></li>
+                <li><a href="#">Registration</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--first container-->
+<div class="container">
+    <h2>Eastwood Indians Registration form</h2>
+    <div class="row">
+
+        <div class="pull-right resident-add-form col-sm-4">
+            <h4>Add Resident</h4>
+            <div class="form-group input-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="first_name" name="firstName" id="firstName"
+                       placeholder="First Name" >
+            </div>
+            <div class="form-group input-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="last_name" name="lastName" id="lastName"
+                       placeholder="Last Name">
+            </div>
+            <div class="form-group input-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                </span>
+                <input type="text" class="communityName" name="commu_name" id="commu_name"
+                       placeholder="Community">
+            </div>
+            <div class="form-group input-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-phone"></span>
+                </span>
+                <input type="number" class="ph_num" name="phname" id="phNum"
+                       placeholder="Phone number">
+            </div>
+            <button id="add_btn" type="button" class="btn btn-success" onclick="">Add
+            </button>
+            <button id="cancel_btn" type="button" class="btn btn-default" onclick="">Cancel</button>
+        </div>
+
+        <div class="pull-left resident-list-container col-sm-8">
+            <table class="resident-list table">
+                <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Community</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td class="f_td"></td>
+                    <td class="l_td"></td>
+                    <td class="commu_td"></td>
+                    <td class="ph_td"></td>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+</div>
+</div>
+
+</body>
+</html>
