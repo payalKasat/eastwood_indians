@@ -4,7 +4,7 @@
 $(document).ready(function(){
     select_image();
     commu_auto_complete();
-    community_click();
+    community_click_info();
     $('.event_pic').click(function(){
         event_pic_click(this);
     });
@@ -27,9 +27,9 @@ function dynamic_image_creation(main_image){
     var image =$('<img src="'+ main_image +'" >').addClass('main_image col-xs-8');
     $('.left_side').append(image);
 }
+var community_images=['images/avalon.jpg','images/helena.jpg','images/delano.jpg','images/petaluma.jpg','images/marin.jpg','images/piedemont.jpg','images/belvedere.jpg','images/calistoga.jpg'];
 
 function select_image(){
-    var community_images=['images/avalon.jpg','images/helena.jpg','images/delano.jpg','images/petaluma.jpg','images/marin.jpg','images/piedemont.jpg','images/belvedere.jpg','images/calistoga.jpg'];
 
 
     $('.community1').mouseover(function(){
@@ -72,9 +72,24 @@ function select_image(){
     });
 }
 
-function community_click(){
+
+function dynamic_info_creation(paragraph,header,info_image) {
+    $('.main_image').empty();
+    $(".main_title").hide();
+    var heading = $('<h2></h2>').addClass('info_heading');
+    var info_ph = $('<p></p>').addClass('para_info');
+    var image =$('<img src="'+ info_image +'" >').addClass('main_image col-xs-8');
+    $('.left_side').append(image,info_ph,heading);
+}
+
+var paragraph =[
+    'Avalon is a luxury apartment houses with 2 large size bedrooms and open floor plan living, dinning and kitchen area. Also it has big balcony for outdoor feel. ',
+    'Helena homes are townhouses with 3 bedroom open floor plan. It has 2 floor. Groun level is kitchen, living, powder room and dinning along with decent size backyard. Level 2 have 3 bedroom with 2 full bathrooms '
+];
+function community_click_info(){
+
     $('.community1').click(function(){
-        add_family_names();
+        dynamic_info_creation(paragraph[0],community_images[0])
     });
 }
 
