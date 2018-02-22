@@ -38,11 +38,17 @@ function dynamic_info_creation(paragraph,header) {
 }
 
 var paragraph =[
-    'Avalon is a luxury apartment houses with 2 large size bedrooms and open floor plan living, dinning and kitchen area. Also it has big balcony for outdoor feel. ',
-    'Helena homes are townhouses with 3 bedroom open floor plan. It has 2 floor. Groun level is kitchen, living, powder room and dinning along with decent size backyard. Level 2 have 3 bedroom with 2 full bathrooms '
+    'Avalon is a luxury apartment houses with 2 large size bedrooms and open floor plan living,' +
+    ' dinning and kitchen area. Also it has big balcony for outdoor feel. ',
+    'Helena homes are townhouses with 3 bedroom open floor plan. It has 2 floor. Ground level is kitchen,' +
+    ' living, powder room and dinning along with decent size backyard. Level 2 have 3 bedroom with 2 full bathrooms ',
+    'Delano is attached condo home. paces and 3-4 bedroom home. 1 bedroom is down stairs that is big advantage.'+
+    ' Garage at back of home and pretty good side yard.',
+    'Petaluma is detached town homes with 3 bedroom and 2 stores. It has 3 rooms on 2 level and living, dinning,'+
+    ' kitchen down stairs. Very good size of backyard and 2 car garage.'
 ];
 
-var heading =['Avelon information','Helena information'];
+var heading =['Avelon information','Helena information','Delano information','Petaluma information','Marin information','Piedemont information','Belvedere information','Calistoga information'];
 
 function select_image(){
 
@@ -59,26 +65,32 @@ function select_image(){
     });
     $('.community3').mouseover(function(){
         dynamic_image_creation(community_images[2]);
+        dynamic_info_creation(paragraph[2],heading[2]);
         $(this).addClass('hover_effect');
     });
     $('.community4').mouseover(function(){
         dynamic_image_creation(community_images[3]);
+        dynamic_info_creation(paragraph[3],heading[3]);
         $(this).addClass('hover_effect');
     });
     $('.community5').mouseover(function(){
         dynamic_image_creation(community_images[4]);
+        dynamic_info_creation(paragraph[4],heading[4]);
         $(this).addClass('hover_effect');
     });
     $('.community6').mouseover(function(){
         dynamic_image_creation(community_images[5]);
+        dynamic_info_creation(paragraph[5],heading[5]);
         $(this).addClass('hover_effect');
     });
     $('.community7').mouseover(function(){
         dynamic_image_creation(community_images[6]);
+        dynamic_info_creation(paragraph[6],heading[6]);
         $(this).addClass('hover_effect');
     });
     $('.community8').mouseover(function(){
         dynamic_image_creation(community_images[7]);
+        dynamic_info_creation(paragraph[7],heading[7]);
         $(this).addClass('hover_effect');
     });
 
