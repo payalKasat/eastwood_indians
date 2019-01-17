@@ -1,10 +1,10 @@
-/**
+        /**
  * Created by ashwi on 2/4/2017.
  */
 $(document).ready(function(){
     select_image();
     commu_auto_complete();
-    community_click_info();
+    //community_click_info();
     $('.event_pic').click(function(){
         event_pic_click(this);
     });
@@ -45,10 +45,17 @@ var paragraph =[
     'Delano is attached condo home. paces and 3-4 bedroom home. 1 bedroom is down stairs that is big advantage.'+
     ' Garage at back of home and pretty good side yard.',
     'Petaluma is detached town homes with 3 bedroom and 2 stores. It has 3 rooms on 2 level and living, dinning,'+
-    ' kitchen down stairs. Very good size of backyard and 2 car garage.'
+    ' kitchen down stairs. Very good size of backyard and 2 car garage.',
+    'Marin is a single family home and casual elegance floor plan, with Great Rooms and dining areas the ' +
+    'focal point of daily life. Privacy of first-floor master bedrooms, along with dens or lofts that ' +
+    'can easily convert into a modern home office.',
+    'Piedmont exceptionally planned for young and growing families to thrive. Large Great Rooms ' +
+    'that connect to gourmet kitchens bring everyone together for meals, playdates and informal celebrations, Also lofts ' +
+    'and dens with California Rooms for indoor/outdoor living.'
 ];
 
-var heading =['Avelon information','Helena information','Delano information','Petaluma information','Marin information','Piedemont information','Belvedere information','Calistoga information'];
+var heading =['Avelon information','Helena information','Delano information','Petaluma information',
+    'Marin information','Piedemont information','Belvedere information','Calistoga information'];
 
 function select_image(){
 
@@ -122,27 +129,33 @@ function select_image(){
 var div_text={
     'new_year':{
         text: '1st January 6:00pm - 9:00pm',
-        src: ['images/Christmas-New-Year.jpg','images/delano.jpg','images/Christmas-New-Year.jpg','images/delano.jpg']
+        src: ['images/Christmas-New-Year.jpg','images/Christmas-New-Year2.jpg','images/Christmas-New-Year3.jpg'],
+        title:['Christmas photos']
     },
     'sankranti': {
         text: '14th January 6:00pm - 9:00pm',
-        src : ['images/sankranti.jpg','images/Christmas-New-Year.jpg','images/delano.jpg','images/Christmas-New-Year.jpg']
+        src : ['images/sankranti.jpg','images/sankranti1.jpg','images/sankranti2.jpg','images/sankranti3.jpg'],
+        title:['Sankranti photos']
     },
     'holi':{
         text: '11:00am - 3:00 pm',
-        src : ['images/Christmas-New-Year.jpg','images/delano.jpg','images/holi.jpg','images/Christmas-New-Year.jpg']
+        src : ['images/holi.jpg','images/holi2.jpg','images/holi3.jpg','images/holi4.jpg'],
+        title:['Holi photos']
     },
     'picnic' :{
         text: '1st June 11:00am - 3:00pm',
-        src : ['images/summer-picnic.jpg','images/delano.jpg','images/Christmas-New-Year.jpg','images/delano.jpg']
+        src : ['images/summer-picnic.jpg','images/summer-picnic2.jpg','images/summer-picnic3.jpg','images/summer-picnic4.jpg'],
+        title:['Picnic photos']
     },
     'halloween' :{
         text:'31st October 5:00pm - 7:00pm',
-        src : ['images/Halloween.jpeg','images/delano.jpg','images/Christmas-New-Year.jpg','images/delano.jpg']
+        src : ['images/Halloween.jpeg','images/Halloween1.jpg','images/Halloween2.jpg'],
+        title:['Halloween photos']
     },
     'diwali' : {
         text:'11:00am - 3:00pm',
-        src : ['images/diwali.jpg','images/delano.jpg','images/Christmas-New-Year.jpg','images/delano.jpg']
+        src : ['images/diwali.jpg','images/diwali1.jpg','images/diwali2.jpg','images/diwali3.jpg'],
+        title:['Diwali Photos']
     }
 };
 
@@ -152,13 +165,15 @@ function event_pic_click(element){
 
     var section = select_event.attr('data-section');
     var pic = div_text[section].src;
-    model_show_up(pic);
+    var event_name = div_text[section].title;
+    model_show_up(pic,event_name);
 
 }
-function model_show_up(pic){         //bootstrap model
+function model_show_up(pic,event_name){         //bootstrap model
     $('.event_pitcher').remove();
     $("#myModal .modal-body");
     $("#myModal ,#myCarousel").modal("show");
+    $('.modal-title').text(event_name);
 
 
     $('.one').append('<img class="event_pitcher" src="' + pic[0] + '">');
